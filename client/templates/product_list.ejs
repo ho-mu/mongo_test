@@ -4,6 +4,17 @@
 	<title>Product Listing</title>
 </head>
 <body>
-<%=prod_name%>
+<ul class="products">
+  <% for(var i=0; i<products.length; i++) {%>
+    <table class="products">
+    	<tr>
+    		<td><%= products[i].prod_id %></td>
+	      <td><%= products[i].prod_name %></td>
+	      <td><%= products[i].prod_type %></td>
+	    </tr>
+    </table>
+  <% } %>
+  </ul>
+
 </body>
 </html>
